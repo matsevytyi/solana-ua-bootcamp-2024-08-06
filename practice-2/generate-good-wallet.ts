@@ -26,9 +26,9 @@ async function generateKeypairWithPrefix(prefix) {
 }
 
 (async () => {
-    const prefix = "and";
+    const prefix = "a55";
     const { keypair, publicKey } = await generateKeypairWithPrefix(prefix);
 
-    console.log(`Знайдено ключ з префіксом '${prefix}': ${publicKey}`);
+    console.log(`Знайдено ключ з префіксом: ${publicKey}`);
     console.log(`Приватний ключ: ${keypair.secretKey}`);
 })();
